@@ -20,7 +20,7 @@ if (!defined('securepage'))
 <?php
 $sql  = "SELECT * FROM users WHERE user_id=? OR user_id=?";
 $stmt = $pdo->prepare($sql);
-$stmt->execute(array(2,3));
+$stmt->execute([2,3]);
 $result = $stmt->fetchAll();
 
 foreach ($result as $row)
