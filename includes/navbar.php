@@ -12,7 +12,7 @@ if (!defined('securepage')) {
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
          </button>
-         <a class="navbar-brand" href="index.php"><?php echo APP_NAME;?> <?php echo VERSION;?></a>
+         <a class="navbar-brand" href="index.php"><?= APP_NAME ?> <?= VERSION ?></a>
       </div>
       <div class="collapse navbar-collapse">
          <p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">Some User</a></p>

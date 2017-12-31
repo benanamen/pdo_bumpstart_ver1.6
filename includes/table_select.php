@@ -19,11 +19,8 @@ if (!defined('securepage'))
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
     {
     $sql  = "SELECT user_id, name_first, name_last, email FROM users WHERE user_id=?";
-
     $stmt = $pdo->prepare($sql);
-    $stmt->execute(array(
-        $_POST['user_id']
-    ));
+    $stmt->execute([$_POST['user_id']]);
     $result = $stmt->fetchAll();
     }
 else

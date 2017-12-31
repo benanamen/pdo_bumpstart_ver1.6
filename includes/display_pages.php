@@ -25,18 +25,15 @@ $restricted_files = array(
 
 if (isset($_GET['p']))
     {
-
     $page = basename($_GET['p']);
 
-    // If it's not a disallowed path, and if the file exists, update $action
     if (!in_array($page, $restricted_files) && file_exists("./includes/$page.php"))
         {
         $include = "./includes/$page.php";
         }
     else
         {
-        // Page Not Found
-        $include = './includes/404.php';
+        $include = './includes/404.php'; // Page Not Found
         }
     }
 else
