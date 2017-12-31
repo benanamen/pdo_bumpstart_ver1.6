@@ -56,12 +56,7 @@ define("DEBUG", True); // Display errors, Sql & Sql Parameters, stack trace.
 
 define("EMAIL_ERROR", False); // Email errors to ADMIN_EMAIL_TO.
 define("LOG_ERROR", False); // Log error to file - 0=Off, 1=On
+define("ERROR_LOG_PATH", ABSPATH . "logs" . DIRECTORY_SEPARATOR . "error.log"); // Path To error log
 
-// Custom exception handler function (functions.php)
-set_exception_handler("custom_exception");
-
-// Path To error log
-define("ERROR_LOG_PATH", ABSPATH . "logs" . DIRECTORY_SEPARATOR . "error.log");
-
-// Set user-defined exception handler function
+// Set user-defined custom exception handler function (functions.php)
 set_exception_handler("custom_exception");
