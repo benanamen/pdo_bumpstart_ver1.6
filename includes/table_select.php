@@ -57,15 +57,9 @@ if ($_GET['p']=='table_select'): ?>
             <td><?= $row['name_first'] ?></td>
             <td><?= $row['name_last'] ?></td>
             <td><?= $row['email'] ?></td>
-            <td>
-                  <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-plus-sign"></span> View Details</button>
-            </td>
-            <td>
-                  <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> Edit User</button>
-            </td>
-            <td>
-                  <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete User</button>
-            </td>
+            <td><button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-plus-sign"></span> View Details</button></td>
+            <td><button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> Edit User</button></td>
+            <td><button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete User</button></td>
          </tr>
          <?php endforeach;?>
       </tbody>
