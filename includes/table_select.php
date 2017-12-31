@@ -58,19 +58,13 @@ if ($_GET['p']=='table_select'): ?>
             <td><?= $row['name_last'] ?></td>
             <td><?= $row['email'] ?></td>
             <td>
-               <form class="form-horizontal" role="form" action="" method="post">
                   <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-plus-sign"></span> View Details</button>
-               </form>
             </td>
             <td>
-               <form class="form-horizontal" role="form" action="" method="post">
                   <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> Edit User</button>
-               </form>
             </td>
             <td>
-               <form class="form-horizontal" role="form" action="" method="post">
                   <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete User</button>
-               </form>
             </td>
          </tr>
          <?php endforeach;?>
