@@ -15,7 +15,7 @@ if (!defined('securepage'))
 
 <h1>Error Example</h1>
 * Debugging must be on in config.php to show details. Additional display if logging and email admin options set.
-<h4><a href="index.php?p=show_source&s=<?= $_GET['p'] ?>">Show Source</a> </h4>
+<h4><a href="index.php?p=show_source&amp;s=<?= $_GET['p'] ?>">Show Source</a> </h4>
 <?php
 // Select from table that doesn't exist. Generate error.
 $sql  = "SELECT * FROM X";

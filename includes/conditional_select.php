@@ -15,7 +15,7 @@ if (!defined('securepage'))
 
 <h1>Conditional Select</h1>
 <h4>WHERE user_id =2 OR user_id=3  </h4>
-<h4><a href="index.php?p=show_source&s=<?= $_GET['p'] ?>">Show Source</a> </h4>
+<h4><a href="index.php?p=show_source&amp;s=<?= $_GET['p'] ?>">Show Source</a> </h4>
 
 <?php
 $sql  = "SELECT * FROM users WHERE user_id=? OR user_id=?";

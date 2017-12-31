@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 <fieldset>
 
 <legend>Demo Form</legend>
- <h4><a href="index.php?p=show_source&s=<?= $_GET['p'] ?>">Show Source</a> </h4>
+ <h4><a href="index.php?p=show_source&amp;s=<?= $_GET['p'] ?>">Show Source</a> </h4>
 <p>* Be sure to set ADMIN_EMAIL_TO in config.php to get email. (Requires SMTP or equivalent) <br>* There is no data sanitizing. Never trust user input.</p>
 
 <!-- Prepended text-->

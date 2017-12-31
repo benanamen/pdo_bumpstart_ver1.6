@@ -14,7 +14,7 @@ if (!defined('securepage'))
 ?>
 
 <h1>Array From Users Table</h1>
-<h4><a href="index.php?p=show_source&s=<?= $_GET['p'] ?>">Show Source</a> </h4>
+<h4><a href="index.php?p=show_source&amp;s=<?= $_GET['p'] ?>">Show Source</a> </h4>
 <?php
 $sql = "SELECT user_id, username, password, name_first, name_middle, name_last, email FROM users";
 $stmt = $pdo->prepare($sql);

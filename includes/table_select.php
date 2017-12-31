@@ -33,7 +33,7 @@ else
 
 if ($_GET['p']=='table_select'): ?>
 <h1>Select To Table</h1>
-<h4><a href="index.php?p=show_source&s=<?= $_GET['p'] ?>">Show Source</a> </h4>
+<h4><a href="index.php?p=show_source&amp;s=<?= $_GET['p'] ?>">Show Source</a> </h4>
 <?php endif?>
 
 <p>

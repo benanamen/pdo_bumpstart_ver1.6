@@ -20,7 +20,7 @@ if (!defined('securepage'))
 <legend>Demo Select User</legend>
 
 <h4>Selects data from database with dropdown "remember".</h4>
-<h4><a href="index.php?p=show_source&s=<?= $_GET['p'] ?>">Show Source</a> </h4>
+<h4><a href="index.php?p=show_source&amp;s=<?= $_GET['p'] ?>">Show Source</a> </h4>
 
 <div class="form-group">
   <label class="col-md-4 control-label" for="users">Select User</label>
