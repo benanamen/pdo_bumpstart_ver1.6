@@ -36,7 +36,7 @@ if (isset($_GET['deleted']))
       <caption></caption>
       <thead>
          <tr>
-            <th>Last <?= $show_how_many_errors ?> Errors  - <a href="index.php?p=errors&deleted" title="Delete Errors">Delete Errors</a></th>
+            <th>Last <?= $show_how_many_errors ?> Errors  - <a href="index.php?p=errors&amp;deleted" title="Delete Errors">Delete Errors</a></th>
          </tr>
       </thead>
       <tbody>
